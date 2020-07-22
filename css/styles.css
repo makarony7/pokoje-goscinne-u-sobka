@@ -210,7 +210,7 @@ img {
   color: #fff;
 }
 .back-to-top:hover {
-  background-color: #517a3f;
+  background-color: #929292;
 }
 .back-to-top-show {
   opacity: 1;
@@ -420,7 +420,7 @@ img {
 }
 .navigation__nav-contact a:hover i::before,
 .navigation__nav-contact a:hover p {
-  color: #517a3f;
+  color: #929292;
 }
 .top-background {
   background-image: url("../images/main-background.jpg");
@@ -606,7 +606,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .contact-background-inside .contacts__ins {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .contact-background-inside .contacts__ins:last-of-type {
     margin-bottom: 0;
@@ -636,7 +636,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .contact-background-inside .contacts a i::before {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 .contact-background-inside .contacts a h3 {
@@ -662,9 +662,8 @@ img {
     line-height: 24px;
   }
 }
-.contact-background-inside .contacts a:hover i::before,
-.contact-background-inside .contacts a:hover h3 {
-  text-shadow: 2px 2px 3px #000;
+.contact-background-inside .contacts a:hover i::before {
+  color: #6aa153;
 }
 .map {
   height: 500px;
@@ -870,7 +869,7 @@ img {
   cursor: pointer;
 }
 .cookies__content-right i:hover::before {
-  color: #517a3f;
+  color: #929292;
 }
 .cookies__content-right i::before {
   display: block;
@@ -883,7 +882,7 @@ img {
   color: #37532b;
 }
 .copy {
-  color: #00718e;
+  color: #6aa153;
   cursor: pointer;
   display: inline-block;
   position: relative;

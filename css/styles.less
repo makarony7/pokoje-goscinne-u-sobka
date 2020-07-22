@@ -45,9 +45,9 @@
 // VARIABLES START
 @bg-main: #fbfbfb;
 @color-dark: #151f10;
-@color-light: #00718e;
+@color-light: #6aa153;
 @color-primary: #37532b;
-@color-primary-hover: #517a3f;
+@color-primary-hover: #929292;
 @color-secondary: #8a8fa3;
 @color-white: #fff;
 @color-black: #000;
@@ -661,7 +661,7 @@ img {
                 justify-self: center;
 
                 @media @width-767 {
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
 
                     &:last-of-type {
                         margin-bottom: 0;
@@ -687,7 +687,7 @@ img {
                         }
 
                         @media @width-767 {
-                            font-size: 34px;
+                            font-size: 36px;
                         }
                     }
                 }
@@ -700,9 +700,8 @@ img {
 
                 &:hover {
 
-                    i::before,
-                    h3 {
-                        text-shadow: 2px 2px 3px @color-black;
+                    i::before {
+                        color: @color-light;
                     }
                 }
             }

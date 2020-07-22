@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 a a:hover {
-  color: #003847;
+  color: #37532b;
 }
 ol,
 ul {
@@ -174,7 +174,7 @@ img {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #003847;
+  background-color: #37532b;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -191,7 +191,7 @@ img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #003847;
+  background-color: #37532b;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -210,7 +210,7 @@ img {
   color: #fff;
 }
 .back-to-top:hover {
-  background-color: #004253;
+  background-color: #517a3f;
 }
 .back-to-top-show {
   opacity: 1;
@@ -258,7 +258,7 @@ img {
   top: 0;
   width: 100%;
   z-index: 99;
-  padding: 10px 0;
+  padding: 20px 0;
   background-color: #fff;
   border-bottom: 1px transparent solid;
   -webkit-transition-duration: 1s;
@@ -268,29 +268,20 @@ img {
   transition-duration: 1s;
 }
 .nav-fixed-scroll {
-  padding: 3px 0;
-  border-color: #003847;
+  padding: 15px 0;
+  border-color: #37532b;
 }
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.navigation__logo {
+  text-transform: uppercase;
+}
 @media only screen and (min-width: 768px) {
   .navigation__logo {
     display: none;
-  }
-}
-.navigation__logo-a {
-  display: block;
-}
-.navigation__logo-a img {
-  display: block;
-  width: 70px;
-}
-@media only screen and (max-width: 575px) {
-  .navigation__logo-a img {
-    width: 55px;
   }
 }
 .navigation__nav {
@@ -327,6 +318,9 @@ img {
   margin-left: 0;
   margin-right: auto;
 }
+.navigation__nav-ul li:first-child a {
+  color: #000 !important;
+}
 .navigation__nav-ul li:first-child a::before {
   width: 0 !important;
 }
@@ -350,7 +344,7 @@ img {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #003847;
+  background-color: #37532b;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -359,7 +353,7 @@ img {
 }
 .navigation__nav-ul li.active a,
 .navigation__nav-ul li:hover a {
-  color: #003847;
+  color: #37532b;
 }
 .navigation__nav-ul li.active a::before,
 .navigation__nav-ul li:hover a::before {
@@ -396,7 +390,7 @@ img {
 }
 .navigation__nav-contact a i::before {
   font-size: 20px;
-  color: #003847;
+  color: #37532b;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -409,7 +403,7 @@ img {
   }
 }
 .navigation__nav-contact a p {
-  color: #003847;
+  color: #37532b;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -426,20 +420,11 @@ img {
 }
 .navigation__nav-contact a:hover i::before,
 .navigation__nav-contact a:hover p {
-  color: #004253;
+  color: #517a3f;
 }
 .top-background {
   background-image: url("../images/main-background.jpg");
-  position: relative;
-}
-.top-background::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  background-position: bottom;
 }
 @media only screen and (max-width: 991px) {
   .top-background {
@@ -448,7 +433,7 @@ img {
 }
 .top-background h1 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -592,7 +577,7 @@ img {
 }
 .contact-background-inside {
   width: 100%;
-  padding: 90px 0;
+  padding: 100px 0;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -608,32 +593,29 @@ img {
   }
 }
 .contact-background-inside .contacts {
-  display: flex;
-  justify-content: space-around;
-}
-@media only screen and (max-width: 991px) {
-  .contact-background-inside .contacts {
-    justify-content: space-between;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 @media only screen and (max-width: 767px) {
   .contact-background-inside .contacts {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contact-background-inside .contacts__ins {
+  justify-self: center;
+}
+@media only screen and (max-width: 767px) {
+  .contact-background-inside .contacts__ins {
+    margin-bottom: 15px;
+  }
+  .contact-background-inside .contacts__ins:last-of-type {
+    margin-bottom: 0;
   }
 }
 .contact-background-inside .contacts a {
+  display: inline-block;
   color: #fff;
   text-align: center;
-  width: 200px;
-}
-@media only screen and (max-width: 767px) {
-  .contact-background-inside .contacts a {
-    margin-bottom: 15px;
-  }
-  .contact-background-inside .contacts a:last-of-type {
-    margin-bottom: 0;
-  }
 }
 .contact-background-inside .contacts a i {
   display: block;
@@ -697,7 +679,7 @@ img {
   height: 100% !important;
 }
 .footer {
-  background-color: #012837;
+  background-color: #151f10;
   position: relative;
   margin-top: -4px;
 }
@@ -724,7 +706,7 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #003847;
+  background-color: #37532b;
   border-radius: 5px;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -803,7 +785,7 @@ img {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #003847;
+  background-color: #37532b;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -812,7 +794,7 @@ img {
 }
 .rwd-menu-ul li.active a,
 .rwd-menu-ul li:hover a {
-  color: #003847;
+  color: #37532b;
 }
 .rwd-menu-ul li.active a::before,
 .rwd-menu-ul li:hover a::before {
@@ -854,7 +836,7 @@ img {
   font-weight: 400;
 }
 .cookies p a:hover {
-  color: #003847;
+  color: #37532b;
 }
 .cookies .cookies-img {
   width: 40px;
@@ -888,7 +870,7 @@ img {
   cursor: pointer;
 }
 .cookies__content-right i:hover::before {
-  color: #004253;
+  color: #517a3f;
 }
 .cookies__content-right i::before {
   display: block;
@@ -898,7 +880,7 @@ img {
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  color: #003847;
+  color: #37532b;
 }
 .copy {
   color: #00718e;
@@ -919,7 +901,7 @@ img {
   line-height: 18px;
   font-weight: 300;
   color: #fff;
-  background-color: #003847;
+  background-color: #37532b;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;

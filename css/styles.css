@@ -210,7 +210,7 @@ img {
   color: #fff;
 }
 .back-to-top:hover {
-  background-color: #929292;
+  background-color: #486d38;
 }
 .back-to-top-show {
   opacity: 1;
@@ -420,7 +420,7 @@ img {
 }
 .navigation__nav-contact a:hover i::before,
 .navigation__nav-contact a:hover p {
-  color: #929292;
+  color: #486d38;
 }
 .top-background {
   background-image: url("../images/main-background.jpg");
@@ -869,7 +869,7 @@ img {
   cursor: pointer;
 }
 .cookies__content-right i:hover::before {
-  color: #929292;
+  color: #486d38;
 }
 .cookies__content-right i::before {
   display: block;
